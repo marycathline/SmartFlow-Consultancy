@@ -34,7 +34,7 @@ export function HeroSection() {
                   ))}
                 </div>
                 <span className="text-sm text-gray-600">
-                  Trusted by 500+ SMEs across Africa
+                  Trusted by 500+ business across the globe
                 </span>
               </div>
 
