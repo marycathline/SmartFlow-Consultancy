@@ -49,7 +49,7 @@ export function HeroSection() {
                 From automation to analytics, digital marketing to business
                 consultation - we provide comprehensive AI solutions to
                 streamline operations, boost sales, and accelerate growth for
-                SMEs across Africa.
+                businesses across the globe.
               </p>
             </div>
 
