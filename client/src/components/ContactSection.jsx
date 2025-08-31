@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card.jsx";
 import { Input } from "./ui/input.jsx";
 import { Textarea } from "./ui/textarea.jsx";
 import { Button } from "./ui/button.jsx";
-import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -181,6 +181,13 @@ export function ContactSection() {
                 >
                   <Instagram className="h-6 w-6" />
                 </a>
+                <a
+  href="#"
+  className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 hover:bg-blue-700 hover:text-white transition-all duration-300 transform hover:scale-110"
+>
+  <Twitter className="h-6 w-6" />
+</a>
+
               </div>
             </div>
           </div>

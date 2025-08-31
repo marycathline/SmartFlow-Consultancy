@@ -9,61 +9,63 @@ export function AboutSection() {
     {
       icon: <Target className="h-8 w-8 text-blue-700" />,
       title: "Our Mission",
-      description: "To democratize AI automation technology and make it accessible to small and medium enterprises across Africa, enabling them to compete globally while solving local challenges.",
+      description: "To empower businesses globally with innovative, reliable, and user-friendly digital solutions that drive growth, improve efficiency, and create lasting value.",
       badge: "Purpose-Driven"
     },
     {
       icon: <Eye className="h-8 w-8 text-blue-700" />,
       title: "Our Vision",
-      description: "To become the leading AI automation partner for businesses, fostering a digitally transformed continent where technology drives sustainable economic growth.",
+      description: "To be a trusted global partner for digital transformation, making technology accessible and impactful for businesses of all sizes.",
       badge: "Future-Focused"
     },
     {
       icon: <Users className="h-8 w-8 text-blue-700" />,
       title: "Our Approach",
-      description: "We believe in personalized solutions, local understanding, and affordable technology that grows with your business. Every automation we create is tailored to your unique needs and challenges.",
+      description: "We believe in personalized solutions, understanding, and affordable technology that grows with your business. Every automation we create is tailored to your unique needs and challenges.",
       badge: "Client-Centered"
     },
   ];
+  
 
   const values = [
     {
       icon: <Heart className="h-6 w-6 text-blue-700" />,
       title: "Customer-Centric",
-      description: "Your success is our priority. We listen, understand, and deliver solutions that truly meet your needs.",
-      badge: "Core Value"
+      description: "We work closely with our clients, turning ideas into impactful solutions through collaboration and partnership.",
+      badge: "Collaboration"
     },
     {
       icon: <Zap className="h-6 w-6 text-blue-700" />,
-      title: "Innovation-Driven",
-      description: "We constantly explore cutting-edge technologies to bring you the most effective automation solutions.",
-      badge: "Tech-Forward"
+      title: "Innovation & Agility",
+      description: "We stay flexible and responsive, exploring cutting-edge technologies to deliver effective and adaptable solutions.",
+      badge: "Agility"
     },
     {
       icon: <Shield className="h-6 w-6 text-blue-700" />,
-      title: "Reliability & Trust",
-      description: "We build lasting partnerships through consistent delivery, transparency, and dependable support.",
+      title: "Security & Integrity",
+      description: "We prioritize data security and ethical practices, ensuring trust and reliability in every interaction.",
       badge: "Trustworthy"
     },
     {
       icon: <Globe className="h-6 w-6 text-blue-700" />,
-      title: "Local Understanding",
-      description: "Deep knowledge of global markets, cultures, and business environments guides our solutions.",
-      badge: "Africa-Focused"
+      title: "Scalability",
+      description: "We design solutions that grow with your business, ensuring long-term sustainability and adaptability.",
+      badge: "Growth-Focused"
     },
     {
       icon: <Award className="h-6 w-6 text-blue-700" />,
-      title: "Excellence",
-      description: "We maintain the highest standards in everything we do, from development to customer service.",
-      badge: "Quality-Driven"
+      title: "Impact-Driven",
+      description: "Every solution we create focuses on delivering measurable results and real business transformation.",
+      badge: "Result-Oriented"
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-blue-700" />,
-      title: "Continuous Learning",
-      description: "We evolve with technology and market needs, ensuring our solutions remain relevant and effective.",
-      badge: "Growth-Minded"
+      title: "Collaboration",
+      description: "We work closely with our clients, turning ideas into impactful solutions through partnership.",
+      badge: "Quality-Driven"
     },
   ];
+  
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -74,8 +76,14 @@ export function AboutSection() {
             About SmartFlow Consultancy
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            We are dedicated to empowering businesses with cutting-edge AI automation 
-            solutions that drive growth, efficiency, and innovation across the continent.
+          We are a digital solutions company dedicated to helping businesses grow smarter,
+           faster, and stronger.Our team builds websites and apps that don’t just look good,
+            but also work seamlessly. We go beyond development by
+             integrating AI-powered tools like email automation,
+              chatbots, API integration, WhatsApp integrations, and Power BI dashboardshelping businesses save time,
+               connect better with customers, and make data-driven decisions.
+
+Our goal is simple: to turn your ideas into impactful digital solutions that deliver real results, no matter where you are in the world.
           </p>
         </div>
 
@@ -120,36 +128,26 @@ export function AboutSection() {
             </h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Founded with a vision to bridge the technology gap in businesses, SmartFlow Consultancy
-                has been at the forefront of making advanced automation accessible to businesses of all sizes.
+              At SmartFlow Consultancy, we are dedicated to helping businesses 
+              harness the power of technology to streamline operations, improve efficiency, and scale with confidence.
+              We understand that many organizations face challenges such as limited resources, outdated systems, or complex processes. Our role is to bridge that gap by providing
+ tailored technology solutions that work in real business environments.
               </p>
               <p>
-                Our team of experienced developers, consultants, and digital marketing experts understand 
-                the unique challenges facing businesses. From infrastructure limitations to resource 
-                constraints, we've designed our solutions to work within these realities while delivering 
-                world-class results.
+              From automation tools to integrated systems, 
+              we design and implement solutions that reduce costs, save time, and create space for growth.
+Though still growing, our work with clients has shown measurable impact boosting
+ productivity and enabling businesses to focus on what matters most.
+
+
               </p>
               <p>
-                With over 500 successful implementations across 15 countries, we've helped businesses 
-                increase efficiency by up to 75% and reduce operational costs significantly.
+              Our commitment is simple: to make advanced technology practical, accessible, 
+              and impactful for businesses of all sizes.
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-700 mb-1">500+</div>
-                <div className="text-sm text-gray-600">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-700 mb-1">15+</div>
-                <div className="text-sm text-gray-600">Countries Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-700 mb-1">98%</div>
-                <div className="text-sm text-gray-600">Client Satisfaction</div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Image */}
@@ -162,17 +160,6 @@ export function AboutSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-700/10 to-transparent"></div>
               
-              {/* Overlay content */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/90 backdrop-blur-md rounded-xl p-4">
-                  <p className="text-sm text-gray-800 font-medium mb-1">
-                    "Working with SmartFlow has revolutionized our operations"
-                  </p>
-                  <p className="text-xs text-gray-600">
-                    - David M., Managing Director, Kenya
-                  </p>
-                </div>
-              </div>
             </div>
             
             {/* Decorative elements */}
@@ -232,7 +219,7 @@ export function AboutSection() {
           <div className="bg-gradient-to-r from-blue-700 to-blue-800 rounded-2xl p-8 text-white">
             <h3 className="text-2xl mb-4">Ready to Transform Your Business?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join hundreds of businesses that have already transformed their operations with our AI automation solutions.
+              Join businesses that have already transformed their operations with our AI automation and integrations solutions.
             </p>
             <button
               className="bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"

@@ -55,7 +55,7 @@ export function BlogSection() {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Stay updated with the latest trends in AI automation, success stories, and practical guides 
-            to help you grow your African business.
+            to help you grow your business.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export function BlogSection() {
           <h3 className="text-2xl text-gray-900 mb-4">Stay Informed</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Subscribe to our newsletter and get weekly insights on AI automation, 
-            business growth strategies, and success stories from African entrepreneurs.
+            business growth strategies, and success stories from entrepreneurs.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">

@@ -1,4 +1,4 @@
-import React from "react";
+{/* import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card.jsx";
 import { Badge } from "./ui/badge.jsx";
 import { Button } from "./ui/button.jsx";
@@ -183,7 +183,7 @@ export function PricingSection() {
     <section id="pricing" className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+       {/* } <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
             {t('pricing.title')}
           </h2>
@@ -198,7 +198,7 @@ export function PricingSection() {
         </div>
 
         {/* Automation Packages - 3 Cards Horizontal */}
-        <div className="mb-20">
+       {/*  <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl text-gray-900 mb-2">Complete Automation Packages</h3>
             <p className="text-gray-600">End-to-end automation solutions for your business</p>
@@ -213,7 +213,7 @@ export function PricingSection() {
                 }`}
               >
                 {/* Badge */}
-                <div className="absolute top-4 right-4 z-10">
+                {/* <div className="absolute top-4 right-4 z-10">
                   <Badge 
                     variant="secondary" 
                     className="bg-blue-700 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -249,7 +249,7 @@ export function PricingSection() {
                 </CardHeader>
 
                 <CardContent className="px-6 pb-8">
-                  {/* Features */}
+                  {/* Features 
                   <div className="space-y-4 mb-6">
                     <h4 className="font-semibold text-gray-900">What's included:</h4>
                     <ul className="space-y-3">
@@ -266,7 +266,7 @@ export function PricingSection() {
                     </ul>
                   </div>
 
-                  {/* Limitations (if any) */}
+                  {/* Limitations (if any) 
                   {plan.limitations.length > 0 && (
                     <div className="space-y-3 mb-6">
                       <h4 className="font-semibold text-gray-900">Limitations:</h4>
@@ -280,7 +280,7 @@ export function PricingSection() {
                     </div>
                   )}
 
-                  {/* CTA Button */}
+                  {/* CTA Button 
                   <Button
                     className={`w-full py-3 rounded-lg transition-all duration-300 transform hover:scale-105 ${
                       plan.popular
@@ -293,14 +293,14 @@ export function PricingSection() {
                   </Button>
                 </CardContent>
 
-                {/* Hover effect overlay */}
+                {/* Hover effect overlay 
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </Card>
             ))}
           </div>
         </div>
 
-        {/* Standalone Services - 3 Cards Horizontal */}
+        {/* Standalone Services - 3 Cards Horizontal 
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl text-gray-900 mb-2">Individual Services</h3>
@@ -315,7 +315,7 @@ export function PricingSection() {
                   service.popular ? "scale-105" : ""
                 }`}
               >
-                {/* Badge */}
+                {/* Badge 
                 <div className="absolute top-4 right-4 z-10">
                   <Badge 
                     variant="secondary" 
@@ -355,7 +355,7 @@ export function PricingSection() {
                 </CardHeader>
 
                 <CardContent className="px-6 pb-8">
-                  {/* Features */}
+                  {/* Features 
                   <div className="space-y-4 mb-6">
                     <h4 className="font-semibold text-gray-900">What's included:</h4>
                     <ul className="space-y-3">
@@ -372,7 +372,7 @@ export function PricingSection() {
                     </ul>
                   </div>
 
-                  {/* CTA Button */}
+                  {/* CTA Button 
                   <Button
                     className={`w-full py-3 rounded-lg transition-all duration-300 transform hover:scale-105 ${
                       service.popular
@@ -386,14 +386,14 @@ export function PricingSection() {
                   </Button>
                 </CardContent>
 
-                {/* Hover effect overlay */}
+                {/* Hover effect overlay 
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </Card>
             ))}
           </div>
         </div>
 
-        {/* Add-ons Section */}
+        {/* Add-ons Section 
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-16">
           <div className="text-center mb-8">
             <h3 className="text-2xl text-gray-900 mb-4">
@@ -407,7 +407,7 @@ export function PricingSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {addOns.map((addon, index) => (
               <Card key={index} className="border border-gray-200 hover:border-blue-700 transition-all duration-300 rounded-xl transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl group overflow-hidden relative">
-                {/* Badge */}
+                {/* Badge 
                 <div className="absolute top-3 right-3 z-10">
                   <Badge 
                     variant="secondary" 
@@ -429,14 +429,14 @@ export function PricingSection() {
                   </p>
                 </CardContent>
 
-                {/* Hover effect overlay */}
+                {/* Hover effect overlay 
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </Card>
             ))}
           </div>
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA 
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-700 to-blue-800 rounded-2xl p-8 text-white">
             <h3 className="text-2xl mb-4">
@@ -472,4 +472,4 @@ export function PricingSection() {
       </div>
     </section>
   );
-}
+}  */}

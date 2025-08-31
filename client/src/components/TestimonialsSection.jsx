@@ -87,10 +87,10 @@ export function TestimonialsSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Trusted by 500+ African Businesses
+            We give you visibility and scale your business
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            See how businesses across Africa are transforming their operations and accelerating growth 
+            See how businesses are transforming their operations and accelerating growth 
             with our AI automation solutions.
           </p>
           <div className="mt-6 flex justify-center">

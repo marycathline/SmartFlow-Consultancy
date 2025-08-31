@@ -15,26 +15,28 @@ import {
 import { useLanguage } from "./LanguageContext.jsx";
 
 export function Footer() {
-  const { t } = useLanguage();
+  const { t } = useLanguage(); // Language hook (for multi-language support)
 
+  // Quick links for smooth scrolling
   const quickLinks = [
     { label: "Services", href: "#services" },
     { label: "About Us", href: "#about" },
-    { label: "Pricing", href: "#pricing" },
     { label: "Blog", href: "#blog" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ];
 
+  // Services list
   const services = [
     "AI Workflow Automation",
     "WhatsApp Automation",
     "Email & CRM Systems",
     "Digital Marketing",
-    "Business Consultation",
+    "Tech Solutions Consultation",
     "Power BI Dashboards",
   ];
 
+  // Social media links
   const socialLinks = [
     { icon: <Linkedin className="h-5 w-5" />, href: "#", label: "LinkedIn" },
     { icon: <Facebook className="h-5 w-5" />, href: "#", label: "Facebook" },
@@ -42,6 +44,7 @@ export function Footer() {
     { icon: <Twitter className="h-5 w-5" />, href: "#", label: "Twitter" },
   ];
 
+  // Smooth scroll function
   const scrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId);
     if (element) {
@@ -51,38 +54,27 @@ export function Footer() {
 
   return (
     <footer className="bg-gradient-to-r from-blue-700 to-blue-800 dark:bg-gray-200 text-white transition-colors duration-300">
-      {/* Main Footer Content */}
       <div className="container-mobile responsive-py">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Company Info */}
+
+          {/* --- Company Info --- */}
           <div className="space-y-6 lg:col-span-1">
             <div className="flex flex-col items-center md:items-start">
-              <div className="flex items-center space-x-3">
-                <img
-                  src="/logo.png"
-                  alt="SmartFlow Logo"
-                  className="w-auto object-contain"
-                />
-   
-              </div>
+              <img src="/logo.png" alt="SmartFlow Logo" className="w-auto object-contain" />
               <p className="text-gray-300 mt-2 text-sm">
-                Transforming businesses through AI automation and smart
-                solutions.
+                Transforming businesses through AI automation and smart tech solutions.
               </p>
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Empowering businesses with AI automation solutions that drive
-              growth, efficiency, and innovation across the continent.
+              Empowering businesses with AI automation and smart tech solutions that drive growth, efficiency, and innovation across the continent.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300">
-                  contact@smartflowconsultancy.com
-                </span>
+                <span className="text-gray-300">contact@smartflowconsultancy.com</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
@@ -95,7 +87,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* --- Quick Links --- */}
           <div className="space-y-6">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-3">
@@ -112,15 +104,12 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* --- Services --- */}
           <div className="space-y-6">
             <h4 className="text-lg font-semibold">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
-                <li
-                  key={index}
-                  className="text-gray-300 text-sm flex items-start space-x-2"
-                >
+                <li key={index} className="text-gray-300 text-sm flex items-start space-x-2">
                   <ArrowRight className="h-3 w-3 text-blue-400 mt-1 flex-shrink-0" />
                   <span>{service}</span>
                 </li>
@@ -128,17 +117,15 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter & Social */}
+          {/* --- Newsletter & Social Links --- */}
           <div className="space-y-6">
             <h4 className="text-lg font-semibold">Stay Connected</h4>
-
+            
             {/* Newsletter Signup */}
             <div className="space-y-4">
               <p className="text-gray-300 text-sm">
-                Subscribe to our newsletter for the latest AI automation
-                insights and updates.
+                Subscribe to our newsletter for the latest AI automation insights and updates.
               </p>
-
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
@@ -176,7 +163,7 @@ export function Footer() {
 
       <Separator className="bg-white dark:bg-gray-700" />
 
-      {/* Bottom Footer */}
+      {/* --- Bottom Footer --- */}
       <div className="container-mobile py-6">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           {/* Copyright */}
@@ -192,26 +179,16 @@ export function Footer() {
 
           {/* Legal Links */}
           <div className="flex items-center space-x-6 text-sm">
-            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Privacy Policy
-            </button>
-            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Terms of Service
-            </button>
-            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Cookie Policy
-            </button>
+            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Privacy Policy</button>
+            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Terms of Service</button>
+            <button className="text-gray-400 hover:text-blue-400 transition-colors duration-200">Cookie Policy</button>
           </div>
         </div>
 
         {/* Additional Info */}
         <div className="mt-6 pt-6 border-t border-white dark:border-gray-700 text-center">
           <p className="text-xs text-gray-400 max-w-4xl mx-auto">
-            SmartFlow Consultancy is a registered business automation
-            consultancy specializing in AI-powered workflow optimization for
-            businesses around the world. We are committed to
-            driving digital transformation and economic growth through
-            innovative technology solutions.
+            SmartFlow Consultancy is a registered tech consultancy specializing in AI-powered workflow solutions for businesses. We are committed to driving digital transformation and economic growth through innovative technology solutions.
           </p>
         </div>
       </div>

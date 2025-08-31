@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Star, Zap, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, Star, Zap, Users, Settings, Smartphone, Bot, BarChart } from "lucide-react"; // added missing icons
 import { useLanguage } from "./LanguageContext.jsx";
 import { ImageWithFallback } from "./figma/ImageWithFallback.jsx";
 import { Button } from "./ui/button.jsx";
@@ -8,9 +8,9 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   const scrollToServices = () => {
-    const element = document.querySelector('#services');
+    const element = document.querySelector("#services");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -33,45 +33,52 @@ export function HeroSection() {
                     />
                   ))}
                 </div>
-                <span className="text-sm text-gray-600">
-                  Trusted by 500+ business across the globe
-                </span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight">
-                Transform Your Business with{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent block">
-                  AI-Powered Solutions
+                  Smart Tech Solutions for Visibility & Scalability 
                 </span>
               </h1>
 
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                From automation to analytics, digital marketing to business
-                consultation - we provide comprehensive AI solutions to
-                streamline operations, boost sales, and accelerate growth for
-                businesses across the globe.
+                Empowering businesses to achieve visibility and scalability
+                through smart tech solutions designed to meet your needs.
               </p>
             </div>
 
             {/* Key Services Highlight */}
-            <div className="grid grid-cols-3 gap-4 py-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6">
+              {/* Website & App Development */}
               <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Zap className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <Smartphone className="h-6 w-6 text-orange-500" />
                 </div>
-                <p className="text-sm text-gray-600">AI Automation</p>
+                <p className="text-sm text-gray-600">Website & App Development</p>
               </div>
+
+              {/* AI-Powered Automations */}
               <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <TrendingUp className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <Bot className="h-6 w-6 text-blue-500" />
                 </div>
-                <p className="text-sm text-gray-600">Digital Marketing</p>
+                <p className="text-sm text-gray-600">AI-Powered Automations</p>
               </div>
+
+              {/* WhatsApp & API Integrations */}
               <div className="text-center">
-                <div className="w-12 h-12 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-2">
-                  <Users className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <Settings className="h-6 w-6 text-green-500" />
                 </div>
-                <p className="text-sm text-gray-600">Business Consulting</p>
+                <p className="text-sm text-gray-600">WhatsApp & API Integrations</p>
+              </div>
+
+              {/* Data & Business Intelligence Dashboards */}
+              <div className="text-center">
+                <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <BarChart className="h-6 w-6 text-yellow-500" />
+                </div>
+                <p className="text-sm text-gray-600">Data & Business Intelligence Dashboards</p>
               </div>
             </div>
 
@@ -94,22 +101,6 @@ export function HeroSection() {
                 Explore Services
               </Button>
             </div>
-
-            {/* Trust indicators */}
-            <div className="flex items-center space-x-8 pt-4">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">500+</div>
-                <div className="text-sm text-gray-600">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">15+</div>
-                <div className="text-sm text-gray-600">Countries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">24/7</div>
-                <div className="text-sm text-gray-600">Support</div>
-              </div>
-            </div>
           </div>
 
           {/* Image */}
@@ -121,19 +112,6 @@ export function HeroSection() {
                 className="w-full h-[400px] md:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent"></div>
-
-              {/* Overlay content */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/90 backdrop-blur-md rounded-lg p-4">
-                  <p className="text-sm text-gray-800 font-medium">
-                    "SmartFlow AI increased our efficiency by 75% and reduced
-                    operational costs significantly."
-                  </p>
-                  <p className="text-xs text-gray-600 mt-1">
-                    - Sarah K., CEO, Lagos Tech Solutions
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Floating elements */}
